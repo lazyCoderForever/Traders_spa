@@ -1,0 +1,26 @@
+@mixin Pt_sans($ftSize, $ftWeight) {
+  font-family: 'PT Sans', sans-serif;
+  font-style: normal;
+  font-weight: $ftWeight;
+  font-size: $ftSize;
+}
+@mixin Open_sans($ftSize) {
+  font-family: 'Open Sans', sans-serif;
+  font-style: $ftWeight;
+  font-weight: 300;
+  font-size: $ftSize;
+}
+@mixin button() {
+  width: 231px;
+  height: 56px;
+  background: #ffffff;
+  border: 1px solid #85b657;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+@mixin footer_links {
+  width: 50px;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 25px;
+}
