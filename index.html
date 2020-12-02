@@ -1,29 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <link rel="stylesheet" href="./src/css/bootstrap-grid.min.css" />
-    <link rel="stylesheet" href="./src/css/index.min.css" />
-    <title>Traders</title>
-  </head>
-  <body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="stylesheet" href="./src/css/bootstrap-grid.min.css" />
+  <link rel="stylesheet" href="./src/css/index.min.css" />
+  <title>Traders</title>
+</head>
+
+<body>
+  <section class="main-screen-wraper">
     <div class="container">
-      <div class="main-screen-wraper">
-        <div class="row main-screen">
-          <header class="header col-sm-12">
-            <div class="row">
-              <a href="#" class="logo col-sm-3"></a>
-              <nav class="header-nav col-sm-7">
-                <ul class=""></ul>
+      <div class="row header">
+        <header class="col-sm-12 col-xl-12">
+          <div class="row">
+            <a href="#" class="logo col-6 col-sm-3 col-md-2 col-lg-3"><img src="./src/img/logo.png" alt="Logo" /></a>
+            <div class="mobile-menu-wraper col-3 offset-3 col-sm-2 offset-sm-7">
+              <input type="checkbox" name="mobile-menu-check" id="mobile-menu-check" />
+              <label for="mobile-menu-check" class="mobile-menu_btn mobile-menu_btn-open"><span class="line"></span></label>
+              <!-- mobile menu -->
+              <nav class="header-mobile-nav">
+                <label for="mobile-menu-check" class="mobile-menu_btn mobile-menu_btn-close"><span class="line"></span></label>
+                <div class="header-mobile-nav_options">
+                  <a href="#" class="login">Login</a>
+                  <a href="#" class="buy_now">Buy Now</a>
+                </div>
+
+                <ul class="header-mobile-nav_menu">
+                  <li class="header-mobile-nav_menu-link-wraper complex-nav">
+                    <a href="#" class="header-mobile-nav_menu-link">Products</a>
+                    <ul class="header-drDown-menu">
+                      <li class="header-drDown-menu-link-wraper">
+                        <a href="#" class="header-drDown-menu-link">Link name</a>
+                      </li>
+                      <li class="header-drDown-menu-link-wraper">
+                        <a href="#" class="header-drDown-menu-link">Link name</a>
+                      </li>
+                      <li class="header-drDown-menu-link-wraper">
+                        <a href="#" class="header-drDown-menu-link">Link name</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="header-mobile-nav_menu-link-wraper ">
+                    <a href="#" class="header-mobile-nav_menu-link">News & Events</a>
+                  </li>
+                  <li class="header-mobile-nav_menu-link-wraper ">
+                    <a href="#" class="header-mobile-nav_menu-link">Support</a>
+                  </li>
+                  <li class="header-mobile-nav_menu-link-wraper ">
+                    <a href="#" class="header-mobile-nav_menu-link">Contacts</a>
+                  </li>
               </nav>
             </div>
-          </header>
+
+            <nav class="header-nav col-md-7 col-lg-7 col-xl-6">
+              <ul class="header-nav_menu">
+                <li class="header-nav_menu-link-wraper complex-nav">
+                  <a href="#" class="header-nav_menu-link">Products</a>
+                  <ul class="header-drDown-menu">
+                    <li class="header-drDown-menu-link-wraper">
+                      <a href="#" class="header-drDown-menu-link">Link name</a>
+                    </li>
+                    <li class="header-drDown-menu-link-wraper">
+                      <a href="#" class="header-drDown-menu-link">Link name</a>
+                    </li>
+                    <li class="header-drDown-menu-link-wraper">
+                      <a href="#" class="header-drDown-menu-link">Link name</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="header-nav_menu-link-wraper">
+                  <a href="#" class="header-nav_menu-link">News & Events</a>
+                </li>
+                <li class="header-nav_menu-link-wraper">
+                  <a href="#" class="header-nav_menu-link">Support</a>
+                </li>
+                <li class="header-nav_menu-link-wraper">
+                  <a href="#" class="header-nav_menu-link">Contacts</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="options col-md-3 col-lg-2 col-xl-2 offset-xl-1">
+              <div class="login">
+                <a href="#" class="options-link">Login</a>
+              </div>
+              <div class="buy_now">
+                <a href="#" class="options-link">Buy Now</a>
+              </div>
+            </div>
+          </div>
+        </header>
+      </div>
+      <div class="row main-screen-text-wraper">
+        <h1 class="global-h1 col-xl-12">WE SOLVE </br> YOUR PROBLEMS</h1>
+        <p class="text-info col-xl-12">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nec
+          accumsan velit. Ut gravida id sem id sodales. Aenean quis enim dui.
+          Vestibulum ullamcorper vel urna quis congue.
+        </p>
+      </div>
+    </div>
+  </section>
+  <section class="about-company-wraper">
+    <div class="container">
+      <div class="row">
+        <h3 class="global-h3 col-12">Etiam ac nisl ac quam sodales scelerisque elementum quis purus.</h3>
+        <div class="about-company-cards">
+          <div class="card">
+            <div class="card-img"></div>
+            <h3 class="card-title">Donec efficitur molestie </h3>
+            <p class="card-text">
+              Nulla pretium nunc in nulla placerat, sit amet porttitor enim ullamcorper. Curabitur ex erat, euismod ac vestibulum vel, viverra non lorem.
+            </p>
+            <a href="#" class="card-link">Learn More</a>
+          </div>
         </div>
       </div>
     </div>
-  </body>
+  </section>
+</body>
+
 </html>
