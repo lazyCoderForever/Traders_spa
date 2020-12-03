@@ -10,6 +10,8 @@ $yellow: #ffff00;
 $red: #ff0000;
 $blue_link: #1657ab;
 $drDown_bg: #1f2e4b;
+$card_bg: #fafafa;
+$footer_bg: #19263f;
 
 * {
   box-sizing: border-box;
@@ -27,10 +29,16 @@ a {
 }
 
 .global-h3 {
-  @include PT_sans(18px, 700);
+  @include Pt_sans(18px, 700);
   line-height: 23px;
   text-align: center;
-  color: ;
+  color: $black;
+}
+.global-h4 {
+  @include Pt_sans(16px, 400);
+  line-height: 20px;
+  text-align: left;
+  color: $black;
 }
 
 /*---------------------------- MAIN SCREEN ----------------------------*/
@@ -251,5 +259,263 @@ a {
 }
 
 /*---------------------------- ABOUT COMPANY ----------------------------*/
+
+.about-company-wraper {
+  margin: 80px 0 0;
+  .advantages-main-h3 {
+    margin: 30px auto;
+  }
+  .about-company-cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 30px auto;
+    .card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 340px;
+      height: 323px;
+      padding: 30px 35px;
+      background-color: $card_bg;
+      @include Pt_sans(14px, 400);
+      transition: 0.3s;
+      &:hover {
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      }
+      &-link {
+        margin: 30px auto 0;
+        line-height: 18px;
+        color: $blue_link;
+        transition: 0.3s;
+        &:hover {
+          color: #d91e7f;
+        }
+        &:focus {
+          color: $red;
+        }
+      }
+      &-text {
+        margin: 5px auto 7px;
+        line-height: 18px;
+        color: $black;
+      }
+      &-title {
+        margin: 25px auto 5px;
+        @include Pt_sans(18px, 700);
+        line-height: 23px;
+        text-align: center;
+        color: $black;
+      }
+      &-img {
+        max-width: 64px;
+        max-height: 64px;
+      }
+    }
+  }
+  .company-advantages-wraper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 30px auto;
+    .advantage-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex-basis: 270px;
+      max-width: 270px;
+      margin: 40px 50px;
+      @include Pt_sans(14px, 400);
+      text-align: center;
+      color: $black;
+      &-text {
+        line-height: 18px;
+      }
+      &-title {
+        margin: 25px auto 10px;
+        @include Pt_sans(18px, 700);
+        line-height: 23px;
+        text-align: center;
+        color: $black;
+      }
+      &-img {
+        max-width: 95px;
+      }
+      &-text-link {
+        color: #1657ab;
+        text-decoration: underline;
+        &:hover {
+          color: #d91e7f;
+        }
+        &:focus {
+          color: red;
+        }
+      }
+    }
+  }
+  .all-advantages-btn {
+    margin: 0 auto;
+    display: flex;
+    width: 230px;
+    height: 56px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    background-color: $white;
+    border: 1px solid #85b657;
+    box-sizing: border-box;
+    border-radius: 4px;
+    color: $black;
+    @include Pt_sans(14px, 400);
+    line-height: 18px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+    &:hover {
+      background-color: #85b657;
+      color: $white;
+    }
+    &:focus {
+      background-color: #85b657;
+      color: $red;
+    }
+  }
+  .our-partners-wraper {
+    margin: 80px 0;
+    @include Pt_sans(16px, 400);
+    .global-h4 {
+      margin: 30px auto 20px;
+      line-height: 20px;
+      .h4-space {
+        display: block;
+        margin: 20px 0;
+      }
+    }
+    .our-partners_list {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      &-partner {
+        width: 94px;
+        height: 105px;
+        margin: 20px 35px;
+        &:last-child {
+          width: 200px;
+          height: 50px;
+        }
+        &-img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          background-position: center center;
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+        .img {
+          &-0 {
+            background-image: url('../img/image_01.png');
+          }
+          &-1 {
+            background-image: url('../img/image_02.png');
+          }
+          &-2 {
+            background-image: url('../img/image_03.png');
+          }
+          &-3 {
+            background-image: url('../img/image_04.png');
+          }
+          &-4 {
+            background-image: url('../img/image_05.png');
+          }
+        }
+      }
+    }
+  }
+}
+
+/*---------------------------- FOOTER ----------------------------*/
+.footer-wraper {
+  width: 100%;
+  padding: 50px 0 40px;
+  background-color: $footer_bg;
+  .info-links-wraper {
+    .info-links-list {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      transition: 0.3s;
+      &_link {
+        margin: 0 25px;
+        .info-link {
+          text-transform: uppercase;
+          color: $white;
+          &:hover {
+            color: $yellow;
+          }
+          &:focus {
+            color: $red;
+          }
+        }
+      }
+    }
+  }
+  .social-links-wraper {
+    .social-links-list {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: 0.3s;
+      margin: 30px auto;
+      &_link {
+        display: block;
+        width: 50px;
+        height: 50px;
+        margin: 0 30px;
+        border-radius: 25px;
+        background-color: rgba(255, 255, 255, 0.3);
+        .social-link {
+          display: block;
+          width: 100%;
+          height: 100%;
+          text-transform: uppercase;
+          background-position: center center;
+          background-repeat: no-repeat;
+          background-size: auto;
+
+          &:hover {
+            filter: invert(97%) sepia(100%) saturate(1286%) hue-rotate(354deg)
+              brightness(104%) contrast(105%);
+          }
+          &:focus {
+            filter: invert(100%) sepia(54%) saturate(4181%) hue-rotate(356deg)
+              brightness(107%) contrast(102%);
+          }
+        }
+        .facebook {
+          background-image: url('../img/fc.png');
+        }
+        .twitter {
+          background-image: url('../img/twitter.svg');
+        }
+        .instagram {
+          background-image: url('../img/instagram.svg');
+        }
+      }
+    }
+  }
+  .copyright-wraper {
+    display: flex;
+    justify-content: center;
+    .copyright {
+      @include Pt_sans(15px, 700);
+      line-height: 19px;
+      color: $white;
+    }
+  }
+}
 
 @import '_media.scss';
