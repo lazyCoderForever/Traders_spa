@@ -175,7 +175,6 @@ a {
       opacity: 1;
       animation: rotateMenu 400ms ease-in-out forwards;
       transform-origin: top center;
-      z-index: 0;
     }
     &::after {
       content: '';
@@ -200,7 +199,7 @@ a {
       background-color: $drDown_bg;
       opacity: 0;
       transform: scaleY(0);
-      z-index: -50;
+      z-index: 560;
       transition: 0.2s;
       &-link-wraper {
         width: 100%;
